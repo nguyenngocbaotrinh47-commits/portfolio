@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <!-- Home icon navigates to top -->
+            <a href="#top" id="home-icon">🏠 Tina</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Project Details</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <header id="about" class="section">
+        <div class="profile-section">
+            <h1 class="profile-name">Your Name</h1>
+            <p>Hello! I am a Web Developer passionate about creating and building web applications that deliver real value. Welcome to my personal portfolio.</p>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Default skills -->
+            <div class="skill-card">
+                <img src="https://via.placeholder.com/50/E34F26/FFFFFF?text=HTML5" alt="HTML5 Logo">
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://via.placeholder.com/50/1572B6/FFFFFF?text=CSS3" alt="CSS3 Logo">
+                <p>CSS3</p>
+            </div>
+            <!-- 3 New skills -->
+            <div class="skill-card">
+                <img src="https://via.placeholder.com/50/F7DF1E/000000?text=JS" alt="JavaScript Logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://via.placeholder.com/50/61DAFB/000000?text=React" alt="React Logo">
+                <p>ReactJS</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://via.placeholder.com/50/339933/FFFFFF?text=Node" alt="Node.js Logo">
+                <p>Node.js</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section id="projects" class="section">
+        <h2>Project Details</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p>A To-Do list application built with ReactJS to help users track and manage their daily tasks effectively.</p>
+            </div>
+            <div class="project-card">
+                <h3>E-commerce Website</h3>
+                <p>An online shopping platform with a full-featured shopping cart, secure checkout, and product management using Node.js.</p>
+            </div>
+            <div class="project-card">
+                <h3>Personal Blog</h3>
+                <p>An SEO-optimized static blog built with pure HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="section">
+        <h2>Recommendations</h2>
+        <div id="rec-list">
+            <blockquote>"They work extremely professionally and always deliver code on time!" - Client A</blockquote>
+            <blockquote>"Their problem-solving and debugging skills are absolutely outstanding." - Colleague B</blockquote>
+            <blockquote>"The website they designed runs smoothly and has a very user-friendly interface." - Manager C</blockquote>
+        </div>
+        
+        <!-- Form to add new recommendation -->
+        <form id="rec-form">
+            <textarea id="new-rec" placeholder="Leave a recommendation..." required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
