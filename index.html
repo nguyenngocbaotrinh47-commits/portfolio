@@ -6,25 +6,27 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="top">
+<body id="home">
+    
     <!-- Navigation Bar -->
     <nav>
         <div class="logo">
-            <!-- Home icon navigates to top -->
-            <a href="#top" id="home-icon">🏠 Tina</a>
+            <a href="#home" class="iconbutton">🏠 Tina </a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Project Details</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#recommendations">Recommendations</a></li>
-        </ul>
+        <div class="topmenu">
+            <a href="#about">About Me</a>
+            <a href="#projects">Project Details</a>
+            <a href="#skills">Skills</a>
+            <a href="#recommendations">Recommendations</a>
+        </div>
     </nav>
 
     <!-- About Me Section -->
     <header id="about" class="section">
         <div class="profile-section">
-            <h1 class="profile-name">Tina</h1>
+            <h1 class="profile_name">Tina</h1>
+            <!-- Ảnh đại diện trống -->
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Image" style="width: 150px; border-radius: 50%;">
             <p>Hello! I am a Web Developer passionate about creating and building web applications that deliver real value. Welcome to my personal portfolio.</p>
         </div>
     </header>
@@ -33,26 +35,25 @@
     <section id="skills" class="section">
         <h2>Skills</h2>
         <div class="skills-container">
-            <!-- Default skills -->
-            <div class="skill-card">
-                <img src="https://via.placeholder.com/50/E34F26/FFFFFF?text=HTML5" alt="HTML5 Logo">
+            <!-- Đã gắn đúng tên 5 file ảnh của em -->
+            <div class="skill">
+                <img src="html5.png" alt="HTML5 Logo" width="50">
                 <p>HTML5</p>
             </div>
-            <div class="skill-card">
-                <img src="https://via.placeholder.com/50/1572B6/FFFFFF?text=CSS3" alt="CSS3 Logo">
+            <div class="skill">
+                <img src="css-3.png" alt="CSS3 Logo" width="50">
                 <p>CSS3</p>
             </div>
-            <!-- 3 New skills -->
-            <div class="skill-card">
-                <img src="https://via.placeholder.com/50/F7DF1E/000000?text=JS" alt="JavaScript Logo">
+            <div class="skill">
+                <img src="js.png" alt="JavaScript Logo" width="50">
                 <p>JavaScript</p>
             </div>
-            <div class="skill-card">
-                <img src="https://via.placeholder.com/50/61DAFB/000000?text=React" alt="React Logo">
+            <div class="skill">
+                <img src="react.png" alt="React Logo" width="50">
                 <p>ReactJS</p>
             </div>
-            <div class="skill-card">
-                <img src="https://via.placeholder.com/50/339933/FFFFFF?text=Node" alt="Node.js Logo">
+            <div class="skill">
+                <img src="nodejs.png" alt="Node.js Logo" width="50">
                 <p>Node.js</p>
             </div>
         </div>
@@ -68,7 +69,7 @@
             </div>
             <div class="project-card">
                 <h3>E-commerce Website</h3>
-                <p>An online shopping platform with a full-featured shopping cart, secure checkout, and product management using Node.js.</p>
+                <p>An online shopping platform with a full-featured shopping cart, checkout, and product management using Node.js.</p>
             </div>
             <div class="project-card">
                 <h3>Personal Blog</h3>
@@ -81,17 +82,17 @@
     <section id="recommendations" class="section">
         <h2>Recommendations</h2>
         <div id="rec-list">
-            <blockquote>"They work extremely professionally and always deliver code on time!" - Client A</blockquote>
-            <blockquote>"Their problem-solving and debugging skills are absolutely outstanding." - Colleague B</blockquote>
-            <blockquote>"The website they designed runs smoothly and has a very user-friendly interface." - Manager C</blockquote>
+            <div class="recommendation">"They work extremely professionally and always deliver code on time!" - Client A</div>
+            <div class="recommendation">"Their problem-solving and debugging skills are absolutely outstanding." - Colleague B</div>
+            <div class="recommendation">"The website they designed runs smoothly and has a very user-friendly interface." - Manager C</div>
         </div>
         
         <!-- Form to add new recommendation -->
-        <form id="rec-form">
+        <div>
             <textarea id="new-rec" placeholder="Leave a recommendation..." required></textarea>
             <br>
-            <button type="submit">Submit</button>
-        </form>
+            <button type="button" onclick="addRecommendation()">Submit</button>
+        </div>
     </section>
 
     <script src="script.js"></script>
